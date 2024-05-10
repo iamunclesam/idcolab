@@ -8,6 +8,30 @@
   animation: breathing 8s infinite ease-in-out; /* Adjust the duration as needed */
 }
 
-/* .line-height {
-  line-height: 68px !important;
-} */
+
+.line-height {
+  line-height: 68px !important; /* Default line height */
+}
+
+@media (max-width: 640px) {
+  /* Small screen (e.g., mobile phones) */
+ 
+  .line-height {
+    line-height: 40px !important; /* Default line height */
+  }
+  
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Medium screen (e.g., tablets) */
+  .line-height {
+    line-height: 72px !important; /* Default line height */
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Large screen (e.g., desktops) */
+  .line-height {
+    line-height: 72px !important; /* Default line height */
+  }
+}

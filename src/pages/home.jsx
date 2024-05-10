@@ -24,17 +24,19 @@ const Home = () => {
                             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                             <div class="relative">
                                 <input type="search" id="default-search" class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required />
-                                <button type="submit" class="text-white absolute end-2.5 bottom-1.5 bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg md:text-md text-sm px-4 py-2 dark:bg-dark-800 dark:hover:bg-dark-900 dark:focus:ring-blue-800">Start Collaborations</button>
+                                <button type="submit" class="text-white absolute end-2.5 bottom-2 bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg md:text-md text-sm px-4 py-2 dark:bg-dark-800 dark:hover:bg-dark-900 dark:focus:ring-blue-800">Start Collaborations</button>
                             </div>
                         </form>
 
 
-                        <p className="text-sm text-gray-400 my-4">
-                            For teams & individuals-web,mobile
+                        <p className="flex items-center text-sm text-gray-500 mt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" className='text-purple-400' width="2em" height="2em" viewBox="0 0 16 16"><path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            For teams & individuals - Web and Mobile
                         </p>
 
-                        <p className="text-sm text-gray-400 m">
-                            *Try our forever free plan.No credit card required
+                        <p className="flex items-center text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" className='text-purple-400' width="2em" height="2em" viewBox="0 0 16 16"><path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            Try our forever free plan.No credit card required
                         </p>
 
 
