@@ -6,8 +6,8 @@ const Navbar = () => {
             {/* Demo Navbar */}
 
 
-            <nav className="bg-white border-gray-200 z-30 dark:bg-gray-900 fixed w-full mb-10 px-3 lg:px-16">
-                <div className="max-w-screen-xl flex border border-gray-700 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
+            <nav className=" border-gray-200 z-30 dark:bg-gray-900 fixed w-full mb-10 px-3 lg:px-16">
+                <div className="bg-white max-w-screen-xl flex border border-gray-700 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
                     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                        
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IDCOLAB</span>
