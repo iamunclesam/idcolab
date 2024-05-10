@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import imgTwo from '../assets/headerLine.svg'
 import imgOne from '../assets/id-image.svg'
 import Navbar from '../components/layout/navbar.jsx'
 import '../App.css'
@@ -17,7 +18,9 @@ const Home = () => {
                 <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:py-16 lg:grid-cols-12">
                     <div className="mr-auto place-self-center lg:col-span-7 order-2 lg:order-1">
                         <h1 className="lg:max-w-2xl text-center lg:text-left mb-4 my-6 text-3xl font-bold md:text-5xl xl:text-5xl dark:text-white line-height">Revolutionizing Client Collaboration: IDCOLAB for Interior Designers</h1>
+                        <img src={imgTwo} alt="mockup" className="w-64 flex justify-end -mt-2 mx-auto" />
                         <p className="lg:max-w-lg mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-sm dark:text-gray-400 text-xs text-center lg:text-left">Our cloud-based Collaboration tool streamlines the design process for interior designers. Collaborate seamlessly with clients, share ideas, and make decisions in real-time.</p>
+                       
 
 
                         <form class="lg:max-w-md">
