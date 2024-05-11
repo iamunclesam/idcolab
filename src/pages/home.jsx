@@ -112,7 +112,7 @@ const Home = () => {
             {/* Video */}
             <div className="rounded-lg overflow-hidden flex justify-center">
               <iframe
-                className="w-full h-96  lg:h-auto rounded-lg"
+                className="w-full h-86 sm:h-96 lg:h-auto rounded-lg"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY"
                 title="YouTube video player"
                 allowFullScreen
