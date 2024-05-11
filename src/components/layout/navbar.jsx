@@ -5,7 +5,7 @@ import { LuMoon, LuSun } from "react-icons/lu";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Navbar = () => {
-  // Initialize theme state with the value stored in local storage or default to "light"
+  // To initialize theme state with the value stored in local storage or default to "light"
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   // Update the theme in local storage and apply it to the document's root element
