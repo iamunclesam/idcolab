@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import imgTwo from '../assets/headerLine.svg'
 import imgOne from '../assets/id-image.svg';
 import Navbar from '../components/layout/navbar.jsx';
 import Image from '../assets/team.jpg';
@@ -14,44 +15,23 @@ const Home = () => {
     };
 
     return (
-      <>
-        <Navbar />
-        <section className="bg-white dark:bg-gray-900 flex items-center lg:h-screen pt-16 md:px-12">
-          <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:py-16 lg:grid-cols-12">
-            <div className="mr-auto place-self-center lg:col-span-7 order-2 lg:order-1">
-              <h1 className="lg:max-w-2xl text-center lg:text-left mb-4 my-6 text-3xl font-bold md:text-5xl xl:text-5xl dark:text-white line-height">
-                Revolutionizing Client Collaboration: IDCOLAB for Interior
-                Designers
-              </h1>
-              <p className="lg:max-w-lg mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-sm dark:text-gray-400 text-xs text-center lg:text-left">
-                Our cloud-based Collaboration tool streamlines the design
-                process for interior designers. Collaborate seamlessly with
-                clients, share ideas, and make decisions in real-time.
-              </p>
+        <>
+            <Navbar />
+            <section className="bg-white dark:bg-gray-900 flex items-center lg:h-screen pt-16 md:px-12">
+                <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:py-16 lg:grid-cols-12">
+                    <div className="mr-auto place-self-center lg:col-span-7 order-2 lg:order-1">
+                        <h1 className="lg:max-w-2xl text-center lg:text-left mb-4 my-6 text-3xl font-bold md:text-5xl xl:text-5xl dark:text-white line-height">Revolutionizing Client Collaboration: IDCOLAB for Interior Designers</h1>
+                        <p className="lg:max-w-lg mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-sm dark:text-gray-400 text-xs text-center lg:text-left">Our cloud-based Collaboration tool streamlines the design process for interior designers. Collaborate seamlessly with clients, share ideas, and make decisions in real-time.</p>
 
-              <form className="lg:max-w-md">
-                <label
-                  for="default-search"
-                  className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-                >
-                  Search
-                </label>
-                <div className="relative items-center">
-                  <input
-                    type="search"
-                    id="default-search"
-                    className="block w-full h-16 px-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Enter your email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white absolute end-2.5 bottom-2 mt-1.5 bg-gradient-to-br from-purple-700 to-blue-500 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg md:text-md text-sm px-4 py-3.5 dark:bg-dark-800 dark:hover:bg-dark-900 dark:focus:ring-blue-800"
-                  >
-                    Start Collaborations
-                  </button>
-                </div>
-              </form>
+
+                        <form class="lg:max-w-md">
+                            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                            <div class="relative items-center">
+                                <input type="search" id="default-search" class="block w-full h-16 px-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required />
+                                <button type="submit" class="text-white absolute end-2.5 bottom-2 mt-1.5 bg-gradient-to-br from-purple-700 to-blue-500 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg md:text-md text-sm px-4 py-3.5 dark:bg-dark-800 dark:hover:bg-dark-900 dark:focus:ring-blue-800">Start Collaborations</button>
+                            </div>
+                        </form>
+
 
               <p className="flex items-center text-sm text-gray-500 mt-4">
                 <svg
