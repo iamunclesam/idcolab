@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-[200] bg-white fixed w-full mb-10 px-3 lg:px-16">
+    <nav className="z-[200] fixed w-full mb-10 px-3 lg:px-16">
       {/*bg-blue items-center flex justify-between px-8 h-16*/}
-      <div className="bg-white dark:bg-gray-900  max-w-screen-xl flex border border-white shadow-md shadow-slate-400 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
+      <div className="bg-white z-[200] dark:bg-gray-900  max-w-screen-xl flex border border-white shadow-md shadow-slate-400 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
         <a href="/">
           <img src={logo} alt="idcolab-logo" className="w-20 md:w-40" />
         </a>
