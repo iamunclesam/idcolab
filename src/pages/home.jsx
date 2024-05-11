@@ -5,7 +5,7 @@ import Navbar from '../components/layout/navbar.jsx';
 import Image from '../assets/team.jpg';
 import ReactPlayer from "react-player";
 // import video from '../assets/videos/interior.mp4';
-import '../App.css'
+import '../App.css';
 
 const Home = () => {
     const [expanded, setExpanded] = useState(false);
