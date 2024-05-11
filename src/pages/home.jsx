@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-white dark:bg-gray-900 flex items-center lg:h-screen pt-16 md:px-12">
+      <section className="bg-white dark:bg-gray-900 flex items-center lg:h-screen pt-16 ">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 order-2 lg:order-1">
             <h1 className="lg:max-w-2xl text-center lg:text-left mb-4 my-6 text-3xl font-bold md:text-5xl xl:text-5xl dark:text-white line-height">
@@ -96,49 +96,42 @@ const Home = () => {
         </div>
       </section>
 
-
-      <section className="bg-gray-200 dark:bg-gray-700 py-4">
-        <div className="VideoSection bg-[#E2E8F0] dark:bg-gray-800 w-auto h-auto flex flex-col rounded-[20px] relative md:m-16">
+      <div className="bg-[#E2E8F0] dark:bg-gray-800 md:p-16 p-4">
+        <section className="videoSection  mx-auto flex flex-col md:p-20 p-4 relative">
           {/* Background Image */}
-          <div className="absolute inset-0 z-0 rounded-[20px]">
-            <img
-              className="w-full h-full object-cover rounded-[20px]"
-              src={Image}
-              alt="Background"
-            />
-            <div className="absolute inset-0 z-0 p-4 rounded-[20px] " style={{ backgroundImage: "linear-gradient(to bottom, rgba(104, 40, 120, 0.8), rgba(55, 0, 74, 0.8))" }}></div> {/* Overlay */}
-          </div>
+          <img
+            src={Image}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+          />
+          {/* Background Overlay */}
+          <div className="absolute w-full inset-0 bg-gradient-to-r from-[#6628c6] via-[#6628c6] to-[#773AD8] opacity-95 rounded-3xl"></div>
 
-          <div className="video-grid grid grid-cols-1 md:grid-cols-12 md:gap-8 items-center relative p-8 py-20 z-10 rounded-[20px]">
-            <div className="col-span-6">
-              <div className="rounded-lg overflow-hidden mx-auto opacity-100 z-50 aspect-w-16 aspect-h-9">
-                <ReactPlayer
-                  url="https://www.youtube.com/watch?v=NoWyNgAQe34&pp=ygUZYWVzdGhldGljIGludGVyaW9yIGRlc2lnbg%3D%3D"
-                  controls={true}
-                />
-              </div>
+          {/* Grid for Video and Text */}
+          <div className="grid lg:grid-cols-2 gap-8 relative z-10">
+            {/* Video */}
+            <div className="rounded-lg overflow-hidden flex justify-center">
+              <iframe
+                className="w-full h-96  lg:h-auto rounded-lg"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                title="YouTube video player"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="col-span-6 z-10"> {/* Ensure text container has higher z-index */}
-              <div className="">
-                <p
-                  className="text-xl md:text-2xl lg:text-2xl mx-auto mt-4 text-white"
-                  style={{ fontFamily: "Space Grotesk" }}
-                >
-                  Welcome to IDCOLAB, the ultimate private hub for interior designers
-                  to seamlessly connect with their clients and bring effective
-                  collaboration to life. Our platform boasts a user-friendly interface
-                  and cutting-edge tools, making interior design project collaboration
-                  an absolute breeze. Design development is mastered here, and
-                  collaboration is done right.
-                </p>
-                <button className="bg-white w-36 rounded-lg text-lg md:text-xl font-semibold py-4 mt-8">
-                  Learn More
-                </button>
-              </div>
+
+            {/* Text */}
+            <div className="flex flex-col justify-center">
+              <p className="text-lg md:text-2xl lg:text-2xl text-white font-space-grotesk">
+                Welcome to IDCOLAB, the ultimate private hub for interior designers to seamlessly connect with their clients and bring effective collaboration to life. Our platform boasts a user-friendly interface and cutting-edge tools, making interior design project collaboration an absolute breeze. Design development is mastered here, and collaboration is done right.
+              </p>
+              <button className="bg-white w-36 md:w-36 h-14 rounded-lg text-lg md:text-xl font-semibold mt-8 md:mt-12 lg:mt-14">
+                Learn More
+              </button>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+      </div>
 
     </>
   );

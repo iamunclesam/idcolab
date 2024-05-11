@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-[200] fixed w-full mb-10 px-3 lg:px-16">
+    <nav className="z-[200] fixed w-full mb-10 px-3 lg:px-16 bg-white dark:bg-gray-900">
       <div
         className={`bg-white ${
           theme === "dark" ? "dark:bg-gray-800" : ""
