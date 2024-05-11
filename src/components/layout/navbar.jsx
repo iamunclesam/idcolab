@@ -30,7 +30,7 @@ const Navbar = () => {
       <div
         className={`bg-white ${
           theme === "dark" ? "dark:bg-gray-800" : ""
-        } z-[200] max-w-screen-xl flex items-center justify-between border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-6 px-4 mx-auto py-2 lg:text-xs`}
+        } z-[200] max-w-screen-xl flex items-center justify-between border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-6 px-4 mx-auto py-4 lg:text-xs`}
       >
         <a href="/">
           <svg
