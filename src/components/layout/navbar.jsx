@@ -30,7 +30,7 @@ const Navbar = () => {
       <div
         className={`bg-white ${
           theme === "dark" ? "dark:bg-gray-800" : ""
-        } z-[200] max-w-screen-xl flex border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2`}
+        } z-[200] max-w-screen-xl flex items-center justify-between border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-6 px-4 mx-auto py-2 lg:text-xs`}
       >
         <a href="/">
           <svg
@@ -100,7 +100,7 @@ const Navbar = () => {
 
         <div className="lg:ml-40 mr-12">
           <ul className="flex justify-between gap-6 font-semibold dark:text-gray-300">
-            <li className="hidden md:flex">
+            <li className="hidden lg:flex">
               <a href="">
                 {theme === "light" ? (
                   <LuMoon onClick={handleThemeSwitch} size={25} />
@@ -109,7 +109,7 @@ const Navbar = () => {
                 )}
               </a>
             </li>
-            <li className="hover:text-[#FECB03] align-middle hidden md:flex">
+            <li className="hover:text-[#FECB03] align-middle hidden lg:flex mt-2">
               <a href="" className="flex">
                 LOG IN <MdOutlineArrowRightAlt className="ml-1 mt-1" />
               </a>
@@ -122,12 +122,20 @@ const Navbar = () => {
         </button>
 
         {/* Menu button for small screens */}
-        <button className="lg:hidden ml-[250px]">
+        <button className="lg:hidden ml-[20px]">
           <a href="">
             {theme === "light" ? (
-              <LuMoon onClick={handleThemeSwitch} size={25} className="dark:text-gray-300" />
+              <LuMoon
+                onClick={handleThemeSwitch}
+                size={25}
+                className="dark:text-gray-300"
+              />
             ) : (
-              <LuSun onClick={handleThemeSwitch} size={25} className="dark:text-gray-300" />
+              <LuSun
+                onClick={handleThemeSwitch}
+                size={25}
+                className="dark:text-gray-300"
+              />
             )}
           </a>
         </button>
