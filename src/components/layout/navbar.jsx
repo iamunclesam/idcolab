@@ -26,11 +26,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-[200] fixed w-full mb-10 px-3 lg:px-16 bg-white dark:bg-gray-900">
+    <nav className="z-[200] fixed top-0 w-full mb-10 px-3 lg:px-16 bg-white dark:bg-gray-900">
       <div
         className={`bg-white ${
           theme === "dark" ? "dark:bg-gray-800" : ""
-        } z-[200] max-w-screen-xl flex items-center justify-between border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-6 px-4 mx-auto py-4 lg:text-xs`}
+        } z-[200] max-w-screen-xl flex items-center justify-between border border-white dark:border-gray-800 shadow-md shadow-slate-400 dark:shadow-none rounded-full my-2 px-4 mx-auto py-4 lg:text-xs`}
       >
         <a href="/">
           <svg
