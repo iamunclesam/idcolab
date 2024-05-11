@@ -96,21 +96,21 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="videoSection bg-[#E2E8F0] dark:bg-gray-800 w-auto h-[130vh] flex flex-col pt-12">
+        <section className="videoSection bg-[#E2E8F0] dark:bg-gray-800 max-w-screen-xl mx-auto h-[130vh] md:h-[90vh] flex flex-col pt-12">
           <div className="relative">
             <img
               src={Image}
               alt=""
-              className="absolute w-[88%] lg:w-[89%] h-[110vh] lg:h-[855px] rounded-3xl ml-[6%] lg:ml-[6%]"
+              className="absolute w-[88%] lg:w-[89%] h-[110vh] md:h-[80vh] lg:h-[855px] rounded-3xl ml-[6%] lg:ml-[6%]"
             />
-            <div className="absolute z-10 bg-gradient-to-r from-[#6628c6] via-[#6628c6] to-[#773AD8] h-[110vh] lg:h-[855px] w-[88%] lg:w-[90%] rounded-3xl ml-[6%] lg:ml-[5.5%] opacity-95"></div>
-            <div className="absolute rounded-lg overflow-hidden ml-[10.5%] lg:ml-[8%] opacity-100 z-50 w-[300px] md:w-[600px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px] mt-[6%] lg:mt-[25%] xl:mt-[20%]">
+            <div className="absolute z-10 bg-gradient-to-r from-[#6628c6] via-[#6628c6] to-[#773AD8] h-[110vh] md:h-[80vh] lg:h-[855px] w-[88%] lg:w-[90%] rounded-3xl ml-[6%] lg:ml-[5.5%] opacity-95"></div>
+            <div className="absolute rounded-lg overflow-hidden ml-[10.5%] lg:ml-[8%] xl:ml-[10%] opacity-100 z-50 w-[300px] md:w-[600px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px] mt-[6%] lg:mt-[25%] xl:mt-[16%]">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=NoWyNgAQe34&pp=ygUZYWVzdGhldGljIGludGVyaW9yIGRlc2lnbg%3D%3D"
                 controls={true}
               />
             </div>
-            <div className="absolute z-50 w-[280px] md:w-[500px] lg:w-[400px] xl:w-[500px] ml-[18%] lg:ml-[50%] mt-[80%] md:mt-[45%] lg:mt-32 xl:mt-52">
+            <div className="absolute z-50 w-[280px] md:w-[500px] lg:w-[400px] xl:w-[500px] ml-[18%] lg:ml-[53%] mt-[80%] md:mt-[45%] lg:mt-32 xl:mt-52">
               <p
                 className=" text-xl md:text-2xl lg:text-3xl text-white"
                 style={{ fontFamily: "Space Grotesk" }}
