@@ -14,43 +14,43 @@ const Navbar = () => {
   return (
     <nav className="z-[200] fixed w-full mb-10 px-3 lg:px-16">
       {/*bg-blue items-center flex justify-between px-8 h-16*/}
-      <div className="bg-white dark:bg-gray-900  max-w-screen-xl flex border lg:border-gray-700 border-gray-300 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
+      <div className="bg-white dark:bg-gray-900  max-w-screen-xl flex border border-white shadow-md shadow-slate-400 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
         <a href="/">
           <img src={logo} alt="idcolab-logo" className="w-40" />
         </a>
 
         {/* Styling for larger screens */}
-        <ul className="text-navy hidden lg:flex justify-between gap-9 font-medium pl-60">
-          <li className="">
+        <ul className="hidden lg:flex justify-between gap-9 font-semibold pl-6 w-[40%]">
+          <li className="hover:text-[#FECB03]">
             <a href="/">3D MODELS</a>
           </li>
 
-          <li>
-            <a href="/proficiency">CUSTOM 3D SERVICE</a>
+          <li className="hover:text-[#FECB03]">
+            <a href="">CUSTOM 3D SERVICE</a>
           </li>
 
-          <li>
-            <a href="/projects">FILE VIEWERS</a>
+          <li className="hover:text-[#FECB03]">
+            <a href="">FILE VIEWERS</a>
           </li>
         </ul>
 
-        <div className="lg:ml-40">
-          <ul className="flex justify-between gap-6">
-                <li>
-                <a href="/blog">
-                    <LuMoon /> <LuSun className="hidden" />
-                </a>
-                </li>
-                <li>
-                <a href="" className="flex">
-                    LOG IN <MdOutlineArrowRightAlt />
-                </a>
-                </li>
+        <div className="lg:ml-40 mr-12">
+          <ul className="flex justify-between gap-6 font-semibold">
+            <li>
+              <a href="">
+                <LuMoon /> <LuSun className="hidden" />
+              </a>
+            </li>
+            <li className="hover:text-[#FECB03] align-middle hidden md:flex">
+              <a href="" className="flex">
+                LOG IN <MdOutlineArrowRightAlt className="ml-1 mt-1" />
+              </a>
+            </li>
           </ul>
         </div>
 
-        <button className="border border-black px-5 py-3 rounded-2xl text-center items-center hover:bg-black hover:text-blue hidden lg:flex font-playFair font-medium">
-          <a href="/contact">SIGN UP</a>
+        <button className="border border-[#6628c6] hover:border-[#6366F1] px-3 py-2 text-sm rounded-lg text-center items-center bg-[#6628c6] hover:bg-[#6366F1] text-white hidden lg:flex font-semibold mr-6">
+          <a href="">SIGN UP</a>
         </button>
 
         {/* Menu button for small screens */}
@@ -60,26 +60,24 @@ const Navbar = () => {
       </div>
       {/* Nav items for smaller screens */}
       {menuOpen && (
-        <div className="mt-2 bg-blue rounded pb-8 mx-4">
-          <ul className="text-navy font-playFair font-medium py-4 pl-5">
-            <li className="mb-2">
-              <a href="/">3D MODELS</a>
+        <div className="bg-white w-72 h-72 shadow-md shadow-slate-400 border border-gray-300 rounded-lg pb-8 mx-4 float-right text-gray-500">
+          <ul className="font-semibold py-4 pl-5">
+            <li className="mt-2 mb-4 hover:text-black">
+              <a href="">3D MODELS</a>
             </li>
 
-            <li className="mb-2">
-              <a href="/proficiency">CUSTOM 3D SERVICE</a>
+            <li className="mb-4 hover:text-black">
+              <a href="">CUSTOM 3D SERVICE</a>
             </li>
 
-            <li className="mb-2">
-              <a href="/projects">FILE VIEWERS</a>
+            <li className="mb-4 hover:text-black">
+              <a href="">FILE VIEWERS</a>
             </li>
 
-            <li className="mb-2">
-              <a href="/blog">Blog</a>
-            </li>
+            <li className="mb-4 hover:text-black">LOG IN</li>
           </ul>
-          <button className="border border-black px-4 py-2 ml-4 rounded-2xl text-center items-center hover:bg-black hover:text-blue font-playFair font-medium text-sm">
-            <a href="/contact">SIGN UP</a>
+          <button className="border border-[#6628c6] hover:border-[#6366F1] px-4 py-2 ml-4 text-white rounded-2xl text-center items-center bg-[#6628c6] hover:bg-[#6366F1] font-semibold text-sm">
+            <a href="">SIGN UP</a>
           </button>
         </div>
       )}
