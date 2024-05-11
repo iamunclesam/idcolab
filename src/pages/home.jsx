@@ -9,15 +9,16 @@ import "../App.css";
 import WhyChooseIdcolab from "../components/WhyChooseIdcolab/index.jsx";
 
 const Home = () => {
-  const [expanded, setExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setExpanded(!expanded);
-  };
 
   return (
     <>
-      <Navbar />
+    {/** -----NAVBAR COMPONENT----- */}
+     <section className="navbar">
+        <Navbar />
+     </section>
+
+
+      {/** -----HERO SECTION----- */}
       <section className="bg-white dark:bg-gray-900 flex items-center lg:h-screen pt-16 mt-6 md:px-16 md:mt-6">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 order-2 lg:order-1">
@@ -31,17 +32,19 @@ const Home = () => {
               ideas, and make decisions in real-time.
             </p>
 
+
+            {/* Email Input */}
             <form className="lg:max-w-md">
               <label
-                for="default-search"
+                for="email"
                 className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
               >
-                Search
+                Email
               </label>
               <div className="relative items-center">
                 <input
                   type="search"
-                  id="default-search"
+                  id="email"
                   className="block w-full h-16 px-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your email"
                   required
@@ -88,6 +91,7 @@ const Home = () => {
             </p>
           </div>
           <div className="lg:mt-0 lg:col-span-5 lg:flex order-1 lg:order-2 ">
+            {/* Hero Image */}
             <img
               src={imgOne}
               alt="mockup"
@@ -97,6 +101,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/** -----ABOUT IDCOLAB SECTION----- */}
       <div className="bg-[#E2E8F0] dark:bg-gray-800 md:p-16 p-4">
         <section className="videoSection  mx-auto flex flex-col md:p-20 p-4 relative">
           {/* Background Image */}
@@ -120,7 +125,7 @@ const Home = () => {
               ></iframe>
             </div>
 
-            {/* Text */}
+            {/* Content */}
             <div className="flex flex-col justify-center">
               <p className="text-lg md:text-2xl lg:text-2xl text-white font-space-grotesk">
                 Welcome to IDCOLAB, the ultimate private hub for interior
@@ -136,6 +141,8 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        {/** -----WHY IDCOLAB COMPONENT SECTION----- */}
         <WhyChooseIdcolab />
       </div>
     </>

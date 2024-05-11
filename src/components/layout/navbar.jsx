@@ -84,7 +84,7 @@ const Navbar = () => {
         </a>
 
         {/* Styling for larger screens */}
-        <ul className="hidden lg:flex justify-between gap-9 font-semibold pl-6 w-[40%] dark:text-gray-300">
+        <ul className="hidden lg:flex justify-between items-center gap-9 font-semibold pl-6 w-[40%] dark:text-gray-300">
           <li className="hover:text-[#FECB03]">
             <a href="/">3D MODELS</a>
           </li>
@@ -99,7 +99,7 @@ const Navbar = () => {
         </ul>
 
         <div className="lg:ml-40 mr-12">
-          <ul className="flex justify-between gap-6 font-semibold dark:text-gray-300">
+          <ul className="flex justify-between items-center gap-6 font-semibold dark:text-gray-300">
             <li className="hidden lg:flex">
               <a href="">
                 {theme === "light" ? (
@@ -109,9 +109,9 @@ const Navbar = () => {
                 )}
               </a>
             </li>
-            <li className="hover:text-[#FECB03] align-middle hidden lg:flex mt-2">
+            <li className="hover:text-[#FECB03] align-middle hidden lg:flex mt">
               <a href="" className="flex">
-                LOG IN <MdOutlineArrowRightAlt className="ml-1 mt-1" />
+                LOG IN <MdOutlineArrowRightAlt className="ml-1 " />
               </a>
             </li>
           </ul>
