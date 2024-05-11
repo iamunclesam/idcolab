@@ -97,7 +97,6 @@ const Home = () => {
       </section>
 
 
-
       <section className="bg-gray-200 dark:bg-gray-700 py-4">
         <div className="VideoSection bg-[#E2E8F0] dark:bg-gray-800 w-auto h-auto flex flex-col rounded-[20px] relative md:m-16">
           {/* Background Image */}
@@ -140,7 +139,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
     </>
   );
