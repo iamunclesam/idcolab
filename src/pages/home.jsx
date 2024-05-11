@@ -104,8 +104,8 @@ const Home = () => {
               className="absolute w-[88%] lg:w-[89%] h-[110vh] md:h-[80vh] lg:h-[855px] rounded-3xl ml-[6%] lg:ml-[6%]"
             />
             <div className="absolute z-10 bg-gradient-to-r from-[#6628c6] via-[#6628c6] to-[#773AD8] h-[110vh] md:h-[80vh] lg:h-[855px] w-[88%] lg:w-[90%] rounded-3xl ml-[6%] lg:ml-[5.5%] opacity-95"></div>
-            <div className="absolute rounded-lg overflow-hidden ml-[10.5%] lg:ml-[8%] xl:ml-[10%] opacity-100 z-50 w-[300px] md:w-[600px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px] mt-[6%] lg:mt-[25%] xl:mt-[16%]">
-              <ReactPlayer
+            <div className="absolute rounded-lg object-contain overflow-hidden ml-[10%] smd:ml-[14%] sm:ml-[14%] md:ml-[10.5%] lg:ml-[8%] xl:ml-[10%] opacity-100 z-50 w-[300px] md:w-[600px] lg:w-[400px] xl:w-[500px] h-[250px] lg:h-[300px] xl:h-[350px] mt-[6%] lg:mt-[25%] xl:mt-[16%]">
+              <ReactPlayer className="aspect-video"
                 url="https://www.youtube.com/watch?v=NoWyNgAQe34&pp=ygUZYWVzdGhldGljIGludGVyaW9yIGRlc2lnbg%3D%3D"
                 controls={true}
               />
