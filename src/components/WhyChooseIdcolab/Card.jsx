@@ -3,7 +3,7 @@ import { cards } from "./data";
 
 function Card() {
   return (
-    <section className="flex grid md:grid-cols-2 w-full mt-6 gap-4 lg:gap-9 justify-center self-center items-center">
+    <section className="flex grid lg:grid-cols-2 w-full mt-6 gap-4 lg:gap-9 justify-center self-center items-center">
         {cards.map((info, i) => {
           return (
             <div
