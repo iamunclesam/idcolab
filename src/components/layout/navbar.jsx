@@ -16,7 +16,7 @@ const Navbar = () => {
       {/*bg-blue items-center flex justify-between px-8 h-16*/}
       <div className="bg-white dark:bg-gray-900  max-w-screen-xl flex border border-white shadow-md shadow-slate-400 rounded-full my-6 px-4 flex-wrap items-center justify-between mx-auto py-2">
         <a href="/">
-          <img src={logo} alt="idcolab-logo" className="w-40" />
+          <img src={logo} alt="idcolab-logo" className="w-20 md:w-40" />
         </a>
 
         {/* Styling for larger screens */}
