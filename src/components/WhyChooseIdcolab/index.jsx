@@ -4,7 +4,7 @@ import Card from "./Card";
 function WhyChooseIdcolab() {
   return (
     <section
-      className="w-full px-[5vw] pt-24 md:pt-32 mx-auto justify-center items-center"
+      className="w-full px-[2vw] pt-24 md:pt-32 mx-auto justify-center items-center"
       id="why"
     >
       <div className="text-center mx-auto w-full justify-center items-center">
