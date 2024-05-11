@@ -96,7 +96,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="videoSection bg-[#E2E8F0] w-auto h-[125vh] flex flex-col pt-12">
+        <section className="videoSection bg-[#E2E8F0] dark:bg-gray-800 w-auto h-[130vh] flex flex-col pt-12">
           <div className="relative">
             <img
               src={Image}
