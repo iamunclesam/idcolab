@@ -122,7 +122,7 @@ const Home = () => {
                 design project collaboration an absolute breeze. Design
                 development is mastered here, and collaboration is done right.
               </p>
-              <button className="bg-white w-36 md:w-36 h-14 ml-12 md:ml-44 lg:ml-32 text-center rounded-lg text-lg md:text-xl font-semibold mt-5 md:mt-12 lg:mt-14">
+              <button className="bg-white w-36 md:w-36 h-14 ml-12 md:ml-44 lg:ml-32 text-center rounded-lg text-lg md:text-xl font-semibold mt-8 md:mt-12 lg:mt-14">
                 Learn More
               </button>
             </div>
