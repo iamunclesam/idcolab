@@ -3,12 +3,12 @@ import { cards } from "./data";
 
 function Card() {
   return (
-    <section className="flex grid lg:grid-cols-2 w-full mt-6 gap-4 lg:gap-9 justify-center self-center items-center">
+    <section className="flex grid lg:grid-cols-2 w-full mt-8 gap-4 lg:gap-9 justify-center items-center">
         {cards.map((info, i) => {
           return (
             <div
               key={i + 1}
-              className="flex flex-col w-full p-6 rounded-[18px] mx-auto gap-4 lg:gap-6 bg-black/10 border border-white dark:border-white shadow-mdtransform transition-transform duration-300 hover:scale-105 justify-center items-start"
+              className="flex flex-col lg:w-[90%] p-6 rounded-xl gap-4 mx-auto lg:gap-6 bg-white/10 border border-white dark:border-white shadow-mdtransform transition-transform duration-300 hover:scale-105 justify-center items-center"
             >
               <div className="flex flex-row gap-4 items-center">
                 <img src={info.img} alt="" className="" />

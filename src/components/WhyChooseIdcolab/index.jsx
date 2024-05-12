@@ -11,7 +11,7 @@ function WhyChooseIdcolab() {
         <span className="dark:text-[#fff] text-2xl md:text-[48px] font-bold leading-[45px]">
           Why Choose IDCOLAB?
         </span>
-        <hr className="w-[69px] h-[5px] mx-auto my-2 text-center dark:bg-white bg-black justify-center items-center" />
+        <hr className="w-[69px] h-[5px] mx-auto mt-3 text-center bg-[#6628c6] justify-center items-center" />
       </div>
       <div className="w-full flex flex-col">
         <Card />
