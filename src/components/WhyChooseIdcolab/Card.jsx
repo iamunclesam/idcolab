@@ -8,9 +8,9 @@ function Card() {
           return (
             <div
               key={i + 1}
-              className="flex flex-col lg:w-[90%] p-6 rounded-xl gap-4 mx-auto lg:gap-6 bg-white/10 border border-white dark:border-white shadow-mdtransform transition-transform duration-300 hover:scale-105 justify-center items-center"
+              className="flex flex-col lg:w-[90%] p-6 rounded-xl gap-4 mx-auto lg:gap-6 bg-white/10 border border-white dark:border-white shadow-mdtransform transition-transform duration-300 hover:scale-105 justify-center items-start"
             >
-              <div className="flex flex-row gap-4 items-center">
+              <div className="flex flex-row gap-4 items-center justify-start">
                 <img src={info.img} alt="" className="" />
                 <div className="dark:text-[#fff] text-black font-bold text-lg md:text-[25px] leading-[19px] md:leading-[32px]">
                   {info.tittle}
